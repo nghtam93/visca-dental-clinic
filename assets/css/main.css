@@ -118,6 +118,9 @@ a {
   font-weight: 700;
   font-style: normal;
   font-display: swap; }
+.-color-primary {
+  color: #5FC4E6; }
+
 ol, ul {
   list-style: none; }
 
@@ -163,6 +166,25 @@ ol, ul {
 
 .text__truncate.-n4 {
   -webkit-line-clamp: 4; }
+
+/**/
+br.tb {
+  display: none; }
+@media (max-width: 991px) {
+  br.pc {
+    display: none; } }
+@media (min-width: 768px) and (max-width: 1199px) {
+  br.tb {
+    display: block; } }
+@media (min-width: 992px) {
+  br.tbl {
+    display: none; } }
+@media (min-width: 768px) {
+  br.mbt {
+    display: none; } }
+@media (min-width: 576px) {
+  br.mb {
+    display: none; } }
 
 /**/
 .sc__header {
@@ -319,44 +341,6 @@ section {
     pointer-events: none; }
 
 /*Effect*/
-[data-animate="bounceInLeft"], [data-animate="bounceInUp"], [data-animate="bounceInDown"], [data-animate="bounceInRight"], .slider [data-animate="bounceInLeft"], .slider [data-animate="bounceInUp"], .slider [data-animate="bounceInDown"], .slider [data-animate="bounceInRight"] {
-  transition: transform 0.8s cubic-bezier(0, 0.195, 0, 1.465), opacity 0.5s ease-in; }
-
-[data-animate="bounceInLeft"], .slider [data-animate="bounceInLeft"] {
-  transform: translate3d(-300px, 0, 0); }
-
-[data-animate="blurIn"], .slider [data-animate="blurIn"] {
-  filter: blur(15px); }
-
-[data-animate="fadeInLeft"], .slider [data-animate="fadeInLeft"] {
-  transform: translate3d(-70px, 0, 0); }
-
-[data-animate="fadeInRight"], .slider [data-animate="fadeInRight"] {
-  transform: translate3d(70px, 0, 0); }
-
-[data-animate="bounceInUp"], [data-animate="fadeInUp"], .slider [data-animate="bounceInUp"], .slider [data-animate="fadeInUp"] {
-  transform: translate3d(0, 70px, 0); }
-
-[data-animate="bounceInRight"], .slider [data-animate="bounceInRight"] {
-  transform: translate3d(300px, 0, 0); }
-
-[data-animate="bounceIn"], .slider [data-animate="bounceIn"] {
-  -ms-transform: scale(1.3);
-  transform: scale(1.3); }
-
-[data-animate="bounceInDown"], [data-animate="fadeInDown"], .slider [data-animate="bounceInDown"], .slider [data-animate="fadeInDown"] {
-  transform: translate3d(0, -70px, 0); }
-
-[data-animate="flipInY"], .slider [data-animate="flipInY"] {
-  transform: perspective(400px) rotate3d(0, 1, 0, -90deg) translate3d(15px, 0, 0);
-  -webkit-backface-visibility: visible;
-  backface-visibility: visible; }
-
-[data-animate="flipInX"], .slider [data-animate="flipInX"] {
-  transform: perspective(400px) rotate3d(1, 0, 0, 90deg) translate3d(0, -15px, 0);
-  -webkit-backface-visibility: visible;
-  backface-visibility: visible; }
-
 [data-animate] {
   will-change: filter,transform,opacity;
   -webkit-backface-visibility: hidden;
@@ -378,14 +362,6 @@ section {
 
 [data-animated="false"] {
   transition: none !important; }
-
-.slider .is-selected [data-animate-delay="600"] {
-  transition: transform 1s ease-in-out !important;
-  transform: translate3d(0, 0, 0) scale(1); }
-
-.slider .is-selected [data-animate-delay="800"] {
-  transition: transform 1s ease-in-out !important;
-  transform: translate3d(0, 0, 0) scale(1); }
 
 /*Menu custom*/
 .modal-open {
@@ -589,7 +565,7 @@ section {
     width: 100%;
     height: 100%;
     background-color: #71ABDD;
-    opacity: .7; }
+    opacity: .84; }
   .sc__boxinfo--wrap {
     position: relative;
     z-index: 1; }
@@ -629,7 +605,16 @@ section {
 
 .wrapper--pc {
   display: none; }
-  @media only screen and (min-width: 769px) {
+  @media only screen and (min-width: 768px) {
+    .wrapper--pc {
+      display: block;
+      width: calc(100% - 400px);
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      overflow: hidden; } }
+  @media only screen and (min-width: 992px) {
     .wrapper--pc {
       display: block;
       width: calc(100% - 550px);
@@ -644,7 +629,12 @@ section {
   border-left: 5px solid #5FC4E6;
   border-right: 5px solid #BEE274;
   border-bottom: 5px solid #BEE274; }
-  @media only screen and (min-width: 769px) {
+  @media only screen and (min-width: 768px) {
+    .wrapper--mb {
+      width: 400px;
+      margin-left: calc(100% - 400px);
+      overflow: hidden; } }
+  @media only screen and (min-width: 992px) {
     .wrapper--mb {
       width: 550px;
       margin-left: calc(100% - 550px);
@@ -678,6 +668,9 @@ section {
   padding-top: 0;
   height: 100vh;
   display: block; }
+@media only screen and (max-width: 991px) {
+  .pc__slider .slider__item--title {
+    font-size: 26px; } }
 
 .header {
   padding-top: 22px; }
@@ -943,13 +936,6 @@ section {
     padding-top: 150%;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px; }
-  @media (min-width: 576px) {
-    .home-greeting .el__item--title {
-      font-size: 26px;
-      padding-bottom: 60px;
-      margin-bottom: 40px; }
-    .home-greeting .el__item--sub {
-      font-size: 26px; } }
 
 .home-feature {
   position: relative;
@@ -1041,7 +1027,7 @@ section {
         font-size: 32px; }
     .home-feature .el__item--title {
       font-family: 'HiraKakuPro-W6';
-      font-weight: 700;
+      font-weight: 400;
       position: absolute;
       top: 50px;
       left: 25px;
@@ -1053,18 +1039,6 @@ section {
       text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #FFF, 0 0 30px #FFF, 0 0 40px #FFF, 0 0 55px #FFF, 0 0 75px #FFF; }
     .home-feature .el__item--excerpt {
       margin-bottom: 40px; }
-  @media (min-width: 576px) {
-    .home-feature .el__item--title {
-      top: 100px;
-      font-size: 26px; }
-    .home-feature .el__item--date {
-      width: 150px;
-      height: 150px; }
-      .home-feature .el__item--date::before {
-        border-top: 150px solid #fff;
-        border-right: 150px solid transparent; }
-      .home-feature .el__item--date .-line {
-        transform-origin: 79% 70px; } }
 
 .home-services {
   position: relative;
@@ -1082,7 +1056,8 @@ section {
       min-height: 55px;
       margin-bottom: 5px; }
     .home-services .el__item--title {
-      color: #666666; }
+      color: #666666;
+      font-weight: 400; }
   .home-services .el__col {
     position: relative;
     display: flex;
@@ -1227,7 +1202,7 @@ section {
   font-size: 11px;
   color: #979797; }
 
-.scrollTop {
+.scrollTop, .scrollTop2 {
   position: absolute;
   bottom: 30px;
   right: 15px;

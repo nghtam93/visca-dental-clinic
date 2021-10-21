@@ -1,7 +1,16 @@
 
 .wrapper--pc{
     display: none;
-    @media only screen and (min-width: 769px){
+    @media only screen and (min-width: 768px){
+        display: block;
+        width: calc(100% - 400px);
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+    }
+    @media only screen and (min-width: 992px){
         display: block;
         width: calc(100% - 550px);
         height: 100vh;
@@ -10,6 +19,7 @@
         left: 0;
         overflow: hidden;
     }
+
 }
 
 .wrapper--mb{
@@ -17,7 +27,12 @@
     border-left: 5px solid #5FC4E6;
     border-right: 5px solid #BEE274;
     border-bottom: 5px solid #BEE274;
-    @media only screen and (min-width: 769px){
+    @media only screen and (min-width: 768px){
+        width: 400px;
+        margin-left: calc(100% - 400px);
+        overflow: hidden;
+    }
+    @media only screen and (min-width: 992px){
         width: 550px;
         margin-left: calc(100% - 550px);
         overflow: hidden;
@@ -55,6 +70,11 @@
         padding-top: 0;
         height: 100vh;
         display:block;
+    }
+    @media only screen and (max-width: 991px){
+        .slider__item--title {
+            font-size: 26px;
+        }
     }
 }
 .header{
@@ -381,16 +401,6 @@
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
     }
-    @media (min-width:576px){
-        .el__item--title {
-            font-size: 26px;
-            padding-bottom: 60px;
-            margin-bottom: 40px;
-        }
-        .el__item--sub {
-            font-size: 26px;
-        }
-    }
 }
 
 .home-feature{
@@ -498,7 +508,7 @@
         }
         &--title{
             font-family: 'HiraKakuPro-W6';
-            font-weight: 700;
+            font-weight: 400;
             position: absolute;
             top: 50px;
             left: 25px;
@@ -514,24 +524,7 @@
             margin-bottom: 40px;
         }
     }
-    @media (min-width:576px){
-        
-        .el__item--title{
-            top: 100px;
-            font-size: 26px;
-        }
-        .el__item--date {
-            width: 150px;
-            height: 150px;
-            &::before {
-                border-top: 150px solid #fff;
-                border-right: 150px solid transparent;
-            }
-            .-line{
-                transform-origin: 79% 70px;
-            }
-        }
-    }
+   
 }
 
 .home-services{
@@ -555,6 +548,7 @@
         }
         &--title{
             color: #666666;
+            font-weight: 400;
         }
     }
     .el__col{
@@ -732,7 +726,7 @@
     font-size: 11px;
     color: #979797;
 }
-.scrollTop{
+.scrollTop,.scrollTop2{
     position: absolute;
     bottom: 30px;
     right: 15px;
