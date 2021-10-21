@@ -82,7 +82,7 @@
             min-height: 50px;
             li{
                 position: relative;
-                width: 100%;
+                flex-grow: 1;
                 text-align: center;
                 padding: 5px 12px 0;
                 &:not(:last-child)::before{
