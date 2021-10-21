@@ -17,7 +17,21 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper--pc">
+        <div class="pc__slider flickity slider" data-flickity='{ "cellSelector": ".slider__item","autoPlay": 6000, "pauseAutoPlayOnHover": false ,"cellAlign": "left", "contain": true, "wrapAround": true, "groupCells": true, "pageDots": false,"prevNextButtons": false}'>
+            <div class="slider__item">
+                <div class="slider__item--thumb dnfix__thumb" data-animate="zoom" data-animated="true">
+                    <img src="assets/images/pc-slider-1.jpg" alt="お口の健康と喜びを すべての方に。" >
+                </div>
+            </div>
+            <div class="slider__item">
+                <div class="slider__item--thumb dnfix__thumb" data-animate="zoom" data-animated="true">
+                    <img src="assets/images/pc-slider-1.jpg" alt="お口の健康と喜びを すべての方に。"  >
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper--mb">
         <!-- Header -->
         <header class="header">
             <div class="header__logo text-center">
@@ -48,27 +62,51 @@
         <section class="home-slider -bottom-left">
             <div class="dn__slider flickity slider" data-flickity='{ "cellSelector": ".slider__item","autoPlay": 6000, "pauseAutoPlayOnHover": false ,"cellAlign": "left", "contain": true, "wrapAround": true, "groupCells": true, "pageDots": true,"prevNextButtons": false}'>
                 <div class="slider__item">
-                    <div class="slider__item--thumb dnfix__thumb" data-animate="zoom" data-animated="true">
-                        <img src="assets/images/home-slider-1.png" alt="お口の健康と喜びを すべての方に。" >
+                    <div class="slider__item--thumb dnfix__thumb">
+                        <img src="assets/images/home-slider-1.jpg" alt="お口の健康と喜びを すべての方に。" >
                     </div>
                     <div class="slider__item--meta">
                         <p class="slider__item--sub"><span>To</span> Be Smile</p>
-                        <div class="slider__item--title"> 
+                        <h3 class="slider__item--title"> 
                             <p>お口の健康と喜びを</p>
                             <p>すべての方に。</p>
-                        </div>
+                        </h3>
                     </div>
                 </div>
                 <div class="slider__item">
-                    <div class="slider__item--thumb dnfix__thumb" data-animate="zoom" data-animated="true">
-                        <img src="assets/images/home-slider-1.png" alt="お口の健康と喜びを すべての方に。"  >
+                    <div class="slider__item--thumb dnfix__thumb">
+                        <img src="assets/images/home-slider-1.jpg" alt="お口の健康と喜びを すべての方に。"  >
                     </div>
                     <div class="slider__item--meta">
                         <p class="slider__item--sub"><span>To</span> Be Smile</p>
-                        <div class="slider__item--title"> 
+                        <h3 class="slider__item--title"> 
                             <p>お口の健康と喜びを</p>
                             <p>すべての方に。</p>
-                        </div>
+                        </h3>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="slider__item--thumb dnfix__thumb">
+                        <img src="assets/images/home-slider-1.jpg" alt="お口の健康と喜びを すべての方に。" >
+                    </div>
+                    <div class="slider__item--meta">
+                        <p class="slider__item--sub"><span>To</span> Be Smile</p>
+                        <h3 class="slider__item--title"> 
+                            <p>お口の健康と喜びを</p>
+                            <p>すべての方に。</p>
+                        </h3>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="slider__item--thumb dnfix__thumb">
+                        <img src="assets/images/home-slider-1.jpg" alt="お口の健康と喜びを すべての方に。"  >
+                    </div>
+                    <div class="slider__item--meta">
+                        <p class="slider__item--sub"><span>To</span> Be Smile</p>
+                        <h3 class="slider__item--title"> 
+                            <p>お口の健康と喜びを</p>
+                            <p>すべての方に。</p>
+                        </h3>
                     </div>
                 </div>
             </div>
@@ -231,7 +269,6 @@
                                 将来までつづく、<br>
                                 お口全体の健やかさを
                             </div>
-                            <div class="el__item--hr"></div>
                             <div class="el__item--sub">
                                 院長 <br>
                                 日須香 太郎
@@ -291,6 +328,7 @@
                         <div class="-wrap">
                             <div class="-cat">Feature</div>
                             <div class="-number">02</div>
+                            <div class="-line"></div>
                         </div>
                     </div>
                     <div class="dnfix__thumb">
@@ -313,6 +351,7 @@
                         <div class="-wrap">
                             <div class="-cat">Feature</div>
                             <div class="-number">03</div>
+                            <div class="-line"></div>
                         </div>
                     </div>
                     <div class="dnfix__thumb">
@@ -335,6 +374,7 @@
                         <div class="-wrap">
                             <div class="-cat">Feature</div>
                             <div class="-number">04</div>
+                            <div class="-line"></div>
                         </div>
                     </div>
                     <div class="dnfix__thumb">
@@ -353,7 +393,7 @@
             </div>
         </section>
 
-        <section class="home-services -top-right">
+        <section class="home-services -top-right -bottom-right">
             <header class="sc__header">
                 <h2 class="sc__header--title">診療科目</h2>
                 <p class="sc__header--sub">Services</p>
@@ -487,33 +527,332 @@
                 <a href="" class="btn btn--primary"><div class="btn--border"></div><span class="">Read More</span></a>
             </div>
 
-            <div class="el__box">
-                <div class="el__box--wrap">
-                    <h3 class="el__box--title">待ち時間の軽減のため、<br>
+            <div class="sc__boxinfo">
+                <div class="sc__boxinfo--wrap">
+                    <h3 class="sc__boxinfo--title">待ち時間の軽減のため、<br>
                         予約優先で診療を行っております</h3>
-                    <p class="el__box--sub">お電話でのご予約</p>
-                    <div class="el__box--phone">
+                    <p class="sc__boxinfo--sub">お電話でのご予約</p>
+                    <div class="sc__boxinfo--phone">
                         <a href="tel:03-5292-5151"><img src="assets/img/ic-phone.png" alt="">03-5292-5151</a>
                         <p>［受付時間］ 9:00〜19:00（木・日・祝は除く）</p>
                     </div>
+                    <div class="text-center mb-3">
+                        <a href="" class="btn btn--primary2"><span class="">WEB予約</span></a>
+                    </div>
                     <div class="text-center">
-                        <a href="" class="btn btn--primary"><div class="btn--border"></div><span class="">WEB予約</span></a>
-                        <a href="" class="btn btn--secondary"><div class="btn--border"></div><span class="">LINE予約</span></a>
+                        <a href="" class="btn btn--secondary2"><span class="">LINE予約</span></a>
                     </div>
                 </div>
             </div>
         </section>
 
+        <section class="home-facilities -top-left -bottom-left">
+            <header class="sc__header">
+                <h2 class="sc__header--title">院内・設備紹介</h2>
+                <p class="sc__header--sub">Facilities</p>
+            </header>
+
+            <p class="el__excerpt">高水準な治療を快適に受けていただくための設備と環境を整えています。</p>
+
+            <div class="el__slider flickity slider" data-flickity='{ "cellSelector": ".slider__item","autoPlay": 6000, "pauseAutoPlayOnHover": false ,"cellAlign": "left", "contain": true, "wrapAround": true, "groupCells": true, "pageDots": true,"prevNextButtons": true}'>
+                <div class="slider__item">
+                    <div class="slider__item--thumb dnfix__thumb">
+                        <img src="assets/images/home-facilities-img-1.jpg" alt="待合室" >
+                        <div class="slider__item--meta">
+                            <h3 class="slider__item--title">待合室</h3>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="slider__item">
+                    <div class="slider__item--thumb dnfix__thumb">
+                        <img src="assets/images/home-facilities-img-1.jpg" alt="待合室"  >
+                        <div class="slider__item--meta">
+                            <h3 class="slider__item--title">待合室</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="slider__item--thumb dnfix__thumb">
+                        <img src="assets/images/home-facilities-img-1.jpg" alt="待合室"  >
+                        <div class="slider__item--meta">
+                            <h3 class="slider__item--title">待合室</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="slider__item--thumb dnfix__thumb">
+                        <img src="assets/images/home-facilities-img-1.jpg" alt="待合室"  >
+                        <div class="slider__item--meta">
+                            <h3 class="slider__item--title">待合室</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="" class="btn btn--primary"><div class="btn--border"></div><span class="">Read More</span></a>
+            </div>
+        </section>
+
+        <section class="home-clgt -top-right -bottom-right">
+            <div class="text-center mb-2">
+                <a href="index.html"><img src="./assets/images/logo.png" alt="logo"></a>
+            </div>
+
+            <div class="schedule -st1 wow fadeIn">
+                <table class="table-schedule" >
+                    <thead>
+                    <tr>
+                        <th>診療時間</th>
+                        <th>月</th>
+                        <th>火</th>
+                        <th>水</th>
+                        <th>木</th>
+                        <th>金</th>
+                        <th>土</th>
+                        <th>日</th>
+                        <th>祝</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th>09:00-13:00</th>
+                        <td>●</td>
+                        <td>●</td>
+                        <td>●</td>
+                        <td>／</td>
+                        <td>●</td>
+                        <td>●</td>
+                        <td>／</td>
+                        <td>／</td>
+                    </tr>
+                    <tr>
+                        <th>14:00-19:00</th>
+                        <td>●</td>
+                        <td>●</td>
+                        <td>●</td>
+                        <td>／</td>
+                        <td>●</td>
+                        <td>★</td>
+                        <td>／</td>
+                        <td>／</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="home-slider__text text-center">
+                <p class="-text-small">休診日：木曜・日曜・祝日　★14:00-17:00</p>
+                <p>〒160-0022</p>
+                <p>東京都新宿区新宿6丁目24-20</p>
+                <p class="-map"><img src="./assets/img/map.png" alt=""> MAP</p>
+            </div>
+            <div class="sc__boxinfo">
+                <div class="sc__boxinfo--wrap">
+                    <h3 class="sc__boxinfo--title">待ち時間の軽減のため、<br>
+                        予約優先で診療を行っております</h3>
+                    <p class="sc__boxinfo--sub">お電話でのご予約</p>
+                    <div class="sc__boxinfo--phone">
+                        <a href="tel:03-5292-5151"><img src="assets/img/ic-phone.png" alt="">03-5292-5151</a>
+                        <p>［受付時間］ 9:00〜19:00（木・日・祝は除く）</p>
+                    </div>
+                    <div class="text-center mb-3">
+                        <a href="" class="btn btn--primary2"><span class="">WEB予約</span></a>
+                    </div>
+                    <div class="text-center">
+                        <a href="" class="btn btn--secondary2"><span class="">LINE予約</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-outline -top-left -bottom-left">
+            <div class="el__box">
+                <h3 class="el__box--title mb-4">医院概要　<span class="-font-small">Clinic Outline</span></h3>
+                <p>医院名<br>ビスカ歯科クリニック</p>
+                <p>所在地<br>
+                    〒160-0022<br>
+                    東京都新宿区新宿６丁目２４-２０<br>
+                    KDX新宿六丁目ビル10階</p>
+                <p>電話番号<br>
+                    03-5292-5151</p>
+                <p>URL　https://sharp.visca-japan.xyz/</p>
+                <p>業務内容<br>
+                    歯科、小児歯科、歯科口腔外科、 矯正歯科（むし歯、根管治療、歯周病、入れ歯、小児歯科、予防・クリーニング、歯科口腔外科、インプラント、矯正歯科、小児矯正、審美治療、ホワイトニング）</p>
+            </div>
+            <div class="el__box">
+                <h3 class="el__box--title">各種保険取り扱い</h3>
+                <p>
+                    保険診療を主軸に診療を行っております。 自由診療は選択肢の一環としてご説明し、ご希望の方に行います。
+                </p>
+            </div>
+            <div class="el__box">
+                <h3 class="el__box--title">予約優先診療</h3>
+                <p>
+                    待ち時間軽減のため、原則予約制で診療しています。 ご予約はお電話(03-5292-5151)にてご連絡ください。
+                </p>
+            </div>
+            <div class="el__box">
+                <h3 class="el__box--title">急患随時受付</h3>
+                <p>
+                    柔軟に対応しております。混雑している場合はお待たせすることもございますので、ご来院いただく前に一度お電話(03-5292-5151)にてお問い合わせください。
+                </p>
+            </div>
+            
+        </section>
+
+        <section class="home-banner -top-right -bottom-right">
+            <div class="el__item">
+                <div class="el__item--thumb">
+                    <img src="assets/images/home-banner-img-1.jpg" alt="">
+                </div>
+            </div>
+            <div class="el__item">
+                <div class="el__item--thumb">
+                    <img src="assets/images/home-banner-img-1.jpg" alt="">
+                </div>
+            </div>
+            <div class="el__item">
+                <div class="el__item--thumb">
+                    <img src="assets/images/home-banner-img-1.jpg" alt="">
+                </div>
+            </div>
+            <ul class="el__socical">
+                <li>
+                    <a href=""><span class="icon-instagram"></span></a>
+                </li>
+                <li>
+                    <a href=""><span class="icon-facebook"></span></a>
+                </li>
+                <li>
+                    <a href=""><span class="icon-twitter"></span></a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="sc-footer -top-left">
+            <div class="text-center mb-2">
+                <a href="index.html"><img src="./assets/images/logo.png" alt="logo"></a>
+            </div>
+            <p class="text-center">© 2021  visca dental</p>
+            <div class="scrollTop">
+                <img src="./assets/img/top.png" alt="Top">
+            </div>
+        </section>
     </div>
- 
-  <!-- end Footer -->
-  <script src="./assets/libs/jquery-3.5.1.slim/jquery-3.5.1.slim.min.js"></script>
-  <script src="./assets/libs/bootstrap/js/bootstrap.bundle.js"></script>
-  <script src="./assets/libs/wowjs/js/wow.min.js"></script>
-  <script src="./assets/libs/slick_slider/js/slick.min.js"></script>
-  <script src="./assets/libs/flickity/flickity.pkgd.min.js"></script>
-  <script src="./assets/libs/slick_slider/js/slick.min.js"></script>
-  <script src="./assets/js/main.js"></script>
+    <nav id="menu__mobile" class="nav__mobile">
+        <div class="el__wrap">
+            <div class="nav__mobile__content">
+                <div class="nav__mobile--close active">
+                    <span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span>
+                </div>
+                <div class="text-center mb-2">
+                    <a href="index.html"><img src="./assets/images/logo.png" alt="logo"></a>
+                </div>
+                <ul class="nav__mobile--ul">
+                    <li>
+                        <a href="">TOP</a>
+                    </li>
+                    <li>
+                        <a href="">診療案内</a>
+                    </li>
+                    <li>
+                        <a href="">院長・スタッフ</a>
+                    </li>
+                    <li>
+                        <a href="">院内・設備</a>
+                    </li>
+                    <li>
+                        <a href="">アクセス・診療時間</a>
+                    </li>
+                    <li>
+                        <a href="">お知らせ</a>
+                    </li>
+                </ul>
+                <div class="sc__boxinfo">
+                    <div class="sc__boxinfo--wrap">
+                        <h3 class="sc__boxinfo--title">待ち時間の軽減のため、<br>
+                            予約優先で診療を行っております</h3>
+                        <p class="sc__boxinfo--sub">お電話でのご予約</p>
+                        <div class="sc__boxinfo--phone">
+                            <a href="tel:03-5292-5151"><img src="assets/img/ic-phone.png" alt="">03-5292-5151</a>
+                            <p>［受付時間］ 9:00〜19:00（木・日・祝は除く）</p>
+                        </div>
+                        <div class="text-center mb-3">
+                            <a href="" class="btn btn--primary2"><span class="">WEB予約</span></a>
+                        </div>
+                        <div class="text-center">
+                            <a href="" class="btn btn--secondary2"><span class="">LINE予約</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="schedule -st1">
+                <table class="table-schedule" >
+                    <thead>
+                    <tr>
+                        <th>診療時間</th>
+                        <th>月</th>
+                        <th>火</th>
+                        <th>水</th>
+                        <th>木</th>
+                        <th>金</th>
+                        <th>土</th>
+                        <th>日</th>
+                        <th>祝</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th>09:00-13:00</th>
+                        <td>●</td>
+                        <td>●</td>
+                        <td>●</td>
+                        <td>／</td>
+                        <td>●</td>
+                        <td>●</td>
+                        <td>／</td>
+                        <td>／</td>
+                    </tr>
+                    <tr>
+                        <th>14:00-19:00</th>
+                        <td>●</td>
+                        <td>●</td>
+                        <td>●</td>
+                        <td>／</td>
+                        <td>●</td>
+                        <td>★</td>
+                        <td>／</td>
+                        <td>／</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="home-slider__text text-center">
+                <p class="-text-small">休診日：木曜・日曜・祝日　★14:00-17:00</p>
+                <p>〒160-0022</p>
+                <p>東京都新宿区新宿6丁目24-20</p>
+            </div>
+
+            <section class="sc-footer -top-left">
+                <div class="text-center mb-2">
+                    <a href="index.html"><img src="./assets/images/logo.png" alt="logo"></a>
+                </div>
+                <p class="text-center">© 2021  visca dental</p>
+                <div class="scrollTop">
+                    <img src="./assets/img/top.png" alt="Top">
+                </div>
+            </section>
+        </div>
+    </nav>
+    <!-- end Footer -->
+    <script src="./assets/libs/jquery-3.5.1.slim/jquery-3.5.1.slim.min.js"></script>
+    <script src="./assets/libs/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="./assets/libs/wowjs/js/wow.min.js"></script>
+    <script src="./assets/libs/slick_slider/js/slick.min.js"></script>
+    <script src="./assets/libs/flickity/flickity.pkgd.min.js"></script>
+    <script src="./assets/libs/slick_slider/js/slick.min.js"></script>
+    <script src="./assets/js/main.js"></script>
 
 </body>
 
