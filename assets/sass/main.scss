@@ -1,0 +1,15 @@
+@import "../libs/bootstrap/css/bootstrap.css";
+@import "../libs/wowjs/css/animate.css";
+@import "../libs/flickity/flickity.min.css";
+@import "../libs/slick_slider/css/slick.css";
+
+@import "_mixin/function";
+@import "_mixin/base";
+@import "_mixin/common";
+@import "_mixin/table";
+
+// Component
+@import "_components/base";
+@import "_components/menu";
+// Page
+@import "_pages/home";

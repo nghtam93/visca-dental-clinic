@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'P22SweepyPro';
+    src: url('P22SweepyPro.woff2') format('woff2'),
+        url('P22SweepyPro.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

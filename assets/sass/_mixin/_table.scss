@@ -1,0 +1,51 @@
+.schedule {
+  max-width: 100%;
+  padding: 0 0;
+  background: #fff;
+}
+.table-schedule {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  color: #5FC4E6;
+  margin-bottom: 10px;
+  thead {
+    font-size: 13px;
+    color: #fff;
+    th{
+      background-color: #BEE274;
+      padding: 7px 5px;
+      &:first-child{
+        min-width: 115px;
+        background-color: #5FC4E6;
+      }
+    }
+  }
+
+  th, td {
+    text-align: center;
+    vertical-align: middle;
+    min-width: 26px;
+    border: 0;
+    padding: 5px 5px;
+  }
+  
+  tbody {
+    tr{
+      &:first-child{
+        th,td{
+          padding-top: 15px;
+        }
+      }
+      &:last-child{
+        th,td{
+          padding-bottom: 15px;
+        }
+      }
+    }
+    th{
+      color: #666;
+      
+    }
+  }
+}
