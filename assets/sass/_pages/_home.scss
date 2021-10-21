@@ -32,38 +32,29 @@
       }
       &--meta{
         position: absolute;
-        bottom: 16%;
+        bottom: 15%;
         left: 0;
+        width: 100%;
+        padding: 0 15px;
       }
       &--sub{
-          font-family: 'P22SweepyPro';
-        font-size: 44px;
+        font-family: 'P22SweepyPro';
+        font-size: 30px;
         line-height: normal;
         color: #fff;
-        padding-left: 15px;
-        transform: rotate(350deg);
-        margin-bottom: 15px;
-        span{
-            color: #71ABDD;
-        }
+        margin-bottom: 0;
+        padding-left: 8px;
       }
       &--title{
-          font-size: 19px;
+          font-size: 36px;
           letter-spacing: 4px;
-          color: #289BD8;
-          p{
-            padding: 12px 20px 8px;
-            background-color: rgba(255, 255, 255, .9);
-            margin-bottom: 5px;
-            border-top-right-radius: 10px;
-            border-bottom-right-radius: 10px;
-          }
+          color: #ffffff;
       }
     }
     .dnfix__thumb{
         padding-top: 0;
         height: 100vh;
-      display:block;
+        display:block;
     }
 }
 .header{
