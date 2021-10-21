@@ -643,6 +643,9 @@ section {
 .header {
   padding-top: 22px; }
   .header__nav {
+    position: sticky;
+    top: 0;
+    z-index: 999;
     display: flex;
     flex-wrap: wrap;
     background-color: #5FC4E6; }
