@@ -656,7 +656,7 @@ section {
       min-height: 50px; }
       .header__nav > ul li {
         position: relative;
-        width: 100%;
+        flex-grow: 1;
         text-align: center;
         padding: 5px 12px 0; }
         .header__nav > ul li:not(:last-child)::before {
