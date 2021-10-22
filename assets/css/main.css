@@ -43,7 +43,7 @@ a, a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'HiraKakuPro-W6';
-  font-weight: 400;
+  font-weight: 700;
   line-height: normal; }
 
 ol, ul {
@@ -965,7 +965,7 @@ section {
       margin: auto; }
   .home-greeting .el__item--sub {
     font-family: 'HiraKakuPro-W6';
-    font-weight: 400;
+    font-weight: 700;
     font-size: 18px;
     writing-mode: vertical-rl;
     margin: auto; }
@@ -1069,7 +1069,7 @@ section {
         font-size: 32px; }
     .home-feature .el__item--title {
       font-family: 'HiraKakuPro-W6';
-      font-weight: 400;
+      font-weight: 700;
       position: absolute;
       top: 50px;
       left: 25px;
