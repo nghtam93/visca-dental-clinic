@@ -1077,7 +1077,7 @@ section {
       letter-spacing: 2px;
       writing-mode: vertical-rl;
       color: #5FC4E6;
-      text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #FFF, 0 0 30px #FFF, 0 0 40px #FFF, 0 0 55px #FFF, 0 0 75px #FFF; }
+      text-shadow: 0 0 5px white, 0 0 5px white, 0 0 5px white, 0 0 5px white, 0 0 5px white, 0 0 5px white, 0 0 5px white; }
     .home-feature .el__item--excerpt {
       margin-bottom: 40px; }
 
