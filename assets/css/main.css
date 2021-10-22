@@ -557,15 +557,6 @@ section {
   color: #fff;
   padding: 50px 0;
   text-align: center; }
-  .sc__boxinfo::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #71ABDD;
-    opacity: .84; }
   .sc__boxinfo--wrap {
     position: relative;
     z-index: 1; }
@@ -944,7 +935,7 @@ section {
     margin-bottom: 110px; }
   .home-feature .el__item {
     position: relative;
-    max-width: 500px;
+    max-width: 350px;
     margin: 0 auto;
     padding-bottom: 45px; }
     .home-feature .el__item::before {
