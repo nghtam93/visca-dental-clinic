@@ -43,7 +43,7 @@ a, a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'HiraKakuPro-W6';
-  font-weight: 700;
+  font-weight: 400;
   line-height: normal; }
 
 ol, ul {
@@ -193,7 +193,8 @@ br.tb {
   margin-bottom: 40px; }
   .sc__header--title {
     font-size: 22px;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    font-weight: 400; }
   .sc__header--sub {
     font-size: 12px;
     letter-spacing: 1px;
@@ -609,7 +610,7 @@ section {
     z-index: 1; }
   .sc__boxinfo--title {
     font-family: 'HiraKakuPro-W6';
-    font-weight: 700;
+    font-weight: 400;
     position: relative;
     font-size: 16px;
     letter-spacing: 2px; }
@@ -626,7 +627,7 @@ section {
       margin: 10px auto 30px; }
   .sc__boxinfo--sub {
     font-family: 'HiraKakuPro-W6';
-    font-weight: 700;
+    font-weight: 400;
     font-size: 17px; }
   .sc__boxinfo--phone {
     font-size: 14px;
@@ -637,7 +638,7 @@ section {
       margin-right: 5px; }
     .sc__boxinfo--phone a {
       font-family: 'HiraKakuPro-W6';
-      font-weight: 700;
+      font-weight: 400;
       font-size: 31px;
       color: #fff; }
 
@@ -964,7 +965,7 @@ section {
       margin: auto; }
   .home-greeting .el__item--sub {
     font-family: 'HiraKakuPro-W6';
-    font-weight: 700;
+    font-weight: 400;
     font-size: 18px;
     writing-mode: vertical-rl;
     margin: auto; }
