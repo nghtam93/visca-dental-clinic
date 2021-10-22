@@ -22,13 +22,18 @@ $color_secondary: #BEE274;
 
 @font-face {
     font-family: 'HiraKakuPro-W6';
-    src: url('../fonts/HiraKakuPro-W6/HiraKakuPro-W6-AlphaNum.woff2') format('woff2'),
+    src: url('../fonts/HiraKakuPro-W6/HiraKakuPro-W6-AlphaNum.eot');
+    src: url('../fonts/HiraKakuPro-W6/HiraKakuPro-W6-AlphaNum.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HiraKakuPro-W6/HiraKakuPro-W6-AlphaNum.woff2') format('woff2'),
         url('../fonts/HiraKakuPro-W6/HiraKakuPro-W6-AlphaNum.woff') format('woff'),
         url('../fonts/HiraKakuPro-W6/HiraKakuPro-W6-AlphaNum.ttf') format('truetype');
-    font-weight: 700;
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
+
+
+
 .-color-primary{
     color: $color_primary;
 }

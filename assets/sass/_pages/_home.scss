@@ -361,13 +361,16 @@
     position: relative;
     padding: 90px 0 70px;
     .el__item{
-       &--title{
+        &--meta{
+            width: 100%;
+        }
+        &--title{
            position: relative;
            font-size: 18px;
             writing-mode: vertical-rl;
             letter-spacing: 3px;
             padding-bottom: 40px;
-            margin-bottom: 20px;
+            margin: 10px auto 20px;
             color: #5FC4E6;
             &::after{
                 content: "";
@@ -388,6 +391,7 @@
         font-weight: 700;
         font-size: 18px;
         writing-mode: vertical-rl;
+        margin: auto;
        }
        &--excerpt{
            font-size: 16px;

@@ -114,8 +114,9 @@ a {
   font-display: swap; }
 @font-face {
   font-family: 'HiraKakuPro-W6';
-  src: url("../fonts/HiraKakuPro-W6/HiraKakuPro-W6-AlphaNum.woff2") format("woff2"), url("../fonts/HiraKakuPro-W6/HiraKakuPro-W6-AlphaNum.woff") format("woff"), url("../fonts/HiraKakuPro-W6/HiraKakuPro-W6-AlphaNum.ttf") format("truetype");
-  font-weight: 700;
+  src: url("../fonts/HiraKakuPro-W6/HiraKakuPro-W6-AlphaNum.eot");
+  src: url("../fonts/HiraKakuPro-W6/HiraKakuPro-W6-AlphaNum.eot?#iefix") format("embedded-opentype"), url("../fonts/HiraKakuPro-W6/HiraKakuPro-W6-AlphaNum.woff2") format("woff2"), url("../fonts/HiraKakuPro-W6/HiraKakuPro-W6-AlphaNum.woff") format("woff"), url("../fonts/HiraKakuPro-W6/HiraKakuPro-W6-AlphaNum.ttf") format("truetype");
+  font-weight: normal;
   font-style: normal;
   font-display: swap; }
 .-color-primary {
@@ -939,13 +940,15 @@ section {
 .home-greeting {
   position: relative;
   padding: 90px 0 70px; }
+  .home-greeting .el__item--meta {
+    width: 100%; }
   .home-greeting .el__item--title {
     position: relative;
     font-size: 18px;
     writing-mode: vertical-rl;
     letter-spacing: 3px;
     padding-bottom: 40px;
-    margin-bottom: 20px;
+    margin: 10px auto 20px;
     color: #5FC4E6; }
     .home-greeting .el__item--title::after {
       content: "";
@@ -963,7 +966,8 @@ section {
     font-family: 'HiraKakuPro-W6';
     font-weight: 700;
     font-size: 18px;
-    writing-mode: vertical-rl; }
+    writing-mode: vertical-rl;
+    margin: auto; }
   .home-greeting .el__item--excerpt {
     font-size: 16px;
     margin-top: 50px;
