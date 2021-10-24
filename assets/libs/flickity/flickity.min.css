@@ -21,5 +21,18 @@
 .flickity-rtl .flickity-page-dots{direction:rtl}
 .flickity-page-dots .dot{display:inline-block;width:10px;height:10px;margin:0 8px;background:#333;border-radius:50%;opacity:0.25;cursor:pointer}
 .flickity-page-dots .dot.is-selected{opacity:1}
-/*.flickity-enabled.is-fade .flickity-slider > *{pointer-events:none;z-index:0}
-.flickity-enabled.is-fade .flickity-slider > .is-selected{pointer-events:auto;z-index:1}*/
+
+/* .flickity-enabled.is-fade .flickity-slider > *{pointer-events:none;z-index:0}
+.flickity-enabled.is-fade .flickity-slider > .is-selected{pointer-events:auto;z-index:1} */
+
+/* Fade CSS */
+/* .pc__slider  .slider__item.is-selected img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-filter: grayscale(0) blur(0);
+    filter: grayscale(0) blur(0);
+} */
+
+.pc__slider .flickity-slider{transform:none!important;}
+.pc__slider  .slider__item{left:0!important;opacity:0;transition:opacity 0.3s ease-in-out;z-index:-1;}
+.pc__slider .slider__item.is-selected{opacity:1;z-index:0}

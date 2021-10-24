@@ -1,4 +1,44 @@
 $(document).ready(function(){
+
+  // Sticky navbar
+    // =========================
+
+    // Custom function which toggles between sticky class (is-sticky)
+    var stickyToggle = function (sticky, stickyWrapper, scrollElement,stickyHeight) {
+      var stickyTop = stickyWrapper.offset().top;
+      if (scrollElement.scrollTop() >= stickyTop ) {
+          stickyWrapper.height(stickyHeight);
+          sticky.addClass("is-sticky");
+      }
+      else {
+          sticky.removeClass("is-sticky");
+          stickyWrapper.height('auto');
+      }
+    };
+    $('[data-toggle="sticky-onscroll"]').each(function () {
+        var sticky = $(this);
+        var stickyWrapper = $('<div>').addClass('sticky-wrapper'); // insert hidden element to maintain actual top offset on page
+        sticky.before(stickyWrapper);
+        sticky.addClass('sticky');
+        var stickyHeight = sticky.outerHeight();
+        // Scroll & resize events
+        $(window).on('scroll.sticky-onscroll resize.sticky-onscroll', function () {
+            stickyToggle(sticky, stickyWrapper, $(this),stickyHeight);
+        });
+        stickyToggle(sticky, stickyWrapper, $(window),stickyHeight);
+        // Check scroll top
+        var winSt_t = 0;
+        $(window).scroll(function() {
+            var winSt = $(window).scrollTop();
+            if (winSt >= winSt_t) {
+                sticky.removeClass("top_show")
+            } else {
+                sticky.addClass("top_show")
+            }
+            winSt_t = winSt
+        });
+    });
+    
     var wow = new WOW(
         {
           boxClass:     'wow',
