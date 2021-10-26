@@ -27,7 +27,7 @@ footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
-  font-family: 'HiraKakuPro-W3';
+  font-family: 'NotoSansJP', serif;
   background-color: #fff;
   color: #4D4D4D;
   font-weight: 400;
@@ -41,8 +41,8 @@ a, a:hover {
   transition: all 0.3s; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'HiraKakuPro-W6';
-  font-weight: 700;
+  font-family: 'Kiwi Maru', serif;
+  font-weight: 400;
   line-height: normal; }
 
 ol, ul {
@@ -106,15 +106,20 @@ a {
   font-style: normal;
   font-display: swap; }
 @font-face {
-  font-family: 'HiraKakuPro-W3';
-  src: url("../fonts/HiraKakuPro-W3/HiraKakuPro-W3-AlphaNum.woff2") format("woff2"), url("../fonts/HiraKakuPro-W3/HiraKakuPro-W3-AlphaNum.woff") format("woff"), url("../fonts/HiraKakuPro-W3/HiraKakuPro-W3-AlphaNum.ttf") format("truetype");
+  font-family: 'NotoSansJP';
+  src: url("../fonts/NotoSansJP/NotoSansJP-Regular-Alphabetic.woff2") format("woff2"), url("../fonts/NotoSansJP/NotoSansJP-Regular-Alphabetic.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
 @font-face {
-  font-family: 'HiraKakuPro-W6';
-  src: url("../fonts/HiraKakuPro-W6/HiraKakuPro-W6-AlphaNum.eot");
-  src: url("../fonts/HiraKakuPro-W6/HiraKakuPro-W6-AlphaNum.eot?#iefix") format("embedded-opentype"), url("../fonts/HiraKakuPro-W6/HiraKakuPro-W6-AlphaNum.woff2") format("woff2"), url("../fonts/HiraKakuPro-W6/HiraKakuPro-W6-AlphaNum.woff") format("woff"), url("../fonts/HiraKakuPro-W6/HiraKakuPro-W6-AlphaNum.ttf") format("truetype");
+  font-family: 'NotoSansJP';
+  src: url("../fonts/NotoSansJP/NotoSansJP-Bold-Alphabetic.woff2") format("woff2"), url("../fonts/NotoSansJP/NotoSansJP-Bold-Alphabetic.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Kiwi Maru';
+  src: url("../fonts/KiwiMaru/KiwiMaru-Regular.woff2") format("woff2"), url("../fonts/KiwiMaru/KiwiMaru-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
@@ -894,7 +899,6 @@ section {
     margin: 0 auto 30px;
     padding: 20px 20px;
     text-align: center;
-    font-family: 'HiraKakuPro-W6';
     background: url(../img/home-slider-item-bg.png); }
     .home-slider .el__item::before {
       content: "";
@@ -965,7 +969,6 @@ section {
   .home-news .el__item {
     margin-bottom: 30px; }
     .home-news .el__item--date {
-      font-family: 'HiraKakuPro-W6';
       font-size: 16px;
       font-weight: 700;
       color: #5FC4E6; }
@@ -986,7 +989,6 @@ section {
     text-align: center;
     padding-top: 38%; }
   .home-concept .el--title {
-    font-family: 'HiraKakuPro-W3';
     font-weight: 400;
     font-size: 20px;
     line-height: 46px;
@@ -1042,7 +1044,6 @@ section {
       display: block;
       margin: auto; }
   .home-greeting .el__item--sub {
-    font-family: 'HiraKakuPro-W6';
     font-weight: 700;
     font-size: 18px;
     writing-mode: vertical-rl;
@@ -1146,8 +1147,7 @@ section {
       .home-feature .el__item--date .-number {
         font-size: 32px; }
     .home-feature .el__item--title {
-      font-family: 'HiraKakuPro-W6';
-      font-weight: 700;
+      font-weight: 400;
       position: absolute;
       top: 50px;
       left: 25px;
@@ -1295,7 +1295,6 @@ section {
         background-color: #5FC4E6;
         margin-bottom: 8px; }
     .home-outline .el__box .-font-small {
-      font-family: 'HiraKakuPro-W3';
       font-weight: 400;
       font-size: 14px; }
     .home-outline .el__box p {

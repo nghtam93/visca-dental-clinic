@@ -10,23 +10,50 @@ $color_secondary: #BEE274;
     font-display: swap;
 }
 
+// @font-face {
+//     font-family: 'HiraKakuPro-W3';
+//     src: url('../fonts/HiraKakuPro-W3/HiraKakuPro-W3-AlphaNum.woff2') format('woff2'),
+//         url('../fonts/HiraKakuPro-W3/HiraKakuPro-W3-AlphaNum.woff') format('woff'),
+//         url('../fonts/HiraKakuPro-W3/HiraKakuPro-W3-AlphaNum.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: 'HiraKakuPro-W6';
+//     src: url('../fonts/HiraKakuPro-W6/HiraKakuPro-W6-AlphaNum.eot');
+//     src: url('../fonts/HiraKakuPro-W6/HiraKakuPro-W6-AlphaNum.eot?#iefix') format('embedded-opentype'),
+//         url('../fonts/HiraKakuPro-W6/HiraKakuPro-W6-AlphaNum.woff2') format('woff2'),
+//         url('../fonts/HiraKakuPro-W6/HiraKakuPro-W6-AlphaNum.woff') format('woff'),
+//         url('../fonts/HiraKakuPro-W6/HiraKakuPro-W6-AlphaNum.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+
 @font-face {
-    font-family: 'HiraKakuPro-W3';
-    src: url('../fonts/HiraKakuPro-W3/HiraKakuPro-W3-AlphaNum.woff2') format('woff2'),
-        url('../fonts/HiraKakuPro-W3/HiraKakuPro-W3-AlphaNum.woff') format('woff'),
-        url('../fonts/HiraKakuPro-W3/HiraKakuPro-W3-AlphaNum.ttf') format('truetype');
+    font-family: 'NotoSansJP';
+    src: url('../fonts/NotoSansJP/NotoSansJP-Regular-Alphabetic.woff2') format('woff2'),
+        url('../fonts/NotoSansJP/NotoSansJP-Regular-Alphabetic.woff') format('woff');
     font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'NotoSansJP';
+    src: url('../fonts/NotoSansJP/NotoSansJP-Bold-Alphabetic.woff2') format('woff2'),
+        url('../fonts/NotoSansJP/NotoSansJP-Bold-Alphabetic.woff') format('woff');
+    font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'HiraKakuPro-W6';
-    src: url('../fonts/HiraKakuPro-W6/HiraKakuPro-W6-AlphaNum.eot');
-    src: url('../fonts/HiraKakuPro-W6/HiraKakuPro-W6-AlphaNum.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/HiraKakuPro-W6/HiraKakuPro-W6-AlphaNum.woff2') format('woff2'),
-        url('../fonts/HiraKakuPro-W6/HiraKakuPro-W6-AlphaNum.woff') format('woff'),
-        url('../fonts/HiraKakuPro-W6/HiraKakuPro-W6-AlphaNum.ttf') format('truetype');
+    font-family: 'Kiwi Maru';
+    src: url('../fonts/KiwiMaru/KiwiMaru-Regular.woff2') format('woff2'),
+        url('../fonts/KiwiMaru/KiwiMaru-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;

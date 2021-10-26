@@ -213,7 +213,7 @@
         overflow: hidden;
       }
       &--sub{
-          font-family: 'P22SweepyPro';
+        font-family: 'P22SweepyPro';
         font-size: 44px;
         line-height: normal;
         color: #fff;
@@ -280,7 +280,6 @@
         margin: 0 auto 30px;
         padding: 20px 20px;
         text-align: center;
-        font-family: 'HiraKakuPro-W6';
         background: url(../img/home-slider-item-bg.png);
         &::before{
             content: "";
@@ -372,7 +371,6 @@
     .el__item{
         margin-bottom: 30px;
         &--date{
-            font-family: 'HiraKakuPro-W6';
             font-size: 16px;
             font-weight: 700;
             color: #5FC4E6;
@@ -399,7 +397,6 @@
             padding-top: 38%;
         }
         &--title{
-            font-family: 'HiraKakuPro-W3';
             font-weight: 400;
             font-size: 20px;
             line-height: 46px;
@@ -465,7 +462,6 @@
             }
        }
        &--sub{
-        font-family: 'HiraKakuPro-W6';
         font-weight: 700;
         font-size: 18px;
         writing-mode: vertical-rl;
@@ -589,8 +585,7 @@
             }
         }
         &--title{
-            font-family: 'HiraKakuPro-W6';
-            font-weight: 700;
+            font-weight: 400;
             position: absolute;
             top: 50px;
             left: 25px;
@@ -772,7 +767,6 @@
             }
         }
         .-font-small{
-            font-family: 'HiraKakuPro-W3';
             font-weight: 400;
             font-size: 14px;
         }
