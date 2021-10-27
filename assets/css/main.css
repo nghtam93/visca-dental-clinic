@@ -977,7 +977,7 @@ body {
   .home-concept .el--sub {
     position: fixed;
     top: 220px;
-    right: 0;
+    right: 15px;
     width: 100%;
     max-width: var(--wrapper-mb-width);
     font-family: 'P22SweepyPro';
