@@ -32,23 +32,31 @@ $color_secondary: #BEE274;
 //     font-display: swap;
 // }
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 
-@font-face {
-    font-family: 'NotoSansJP';
-    src: url('../fonts/NotoSansJP/NotoSansJP-Regular-Alphabetic.woff2') format('woff2'),
-        url('../fonts/NotoSansJP/NotoSansJP-Regular-Alphabetic.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'NotoSansJP';
-    src: url('../fonts/NotoSansJP/NotoSansJP-Bold-Alphabetic.woff2') format('woff2'),
-        url('../fonts/NotoSansJP/NotoSansJP-Bold-Alphabetic.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
+
+// @font-face {
+//     font-family: 'NotoSansJP';
+//     src: url('../fonts/NotoSansJP/NotoSansJP-Regular-Alphabetic.eot');
+//     src: url('../fonts/NotoSansJP/NotoSansJP-Regular-Alphabetic.eot?#iefix') format('embedded-opentype'),
+//         url('../fonts/NotoSansJP/NotoSansJP-Regular-Alphabetic.woff2') format('woff2'),
+//         url('../fonts/NotoSansJP/NotoSansJP-Regular-Alphabetic.woff') format('woff'),
+//         url('../fonts/NotoSansJP/NotoSansJP-Regular-Alphabetic.ttf') format('truetype'),
+//         url('../fonts/NotoSansJP/NotoSansJP-Regular-Alphabetic.svg#NotoSansJP-Regular-Alphabetic') format('svg');
+//     font-weight: normal;
+
+// }
+
+// @font-face {
+//     font-family: 'NotoSansJP';
+//     src: url('../fonts/NotoSansJP/NotoSansJP-Medium-Alphabetic.eot');
+//     src: url('../fonts/NotoSansJP/NotoSansJP-Medium-Alphabetic.eot?#iefix') format('embedded-opentype'),
+//         url('../fonts/NotoSansJP/NotoSansJP-Medium-Alphabetic.woff2') format('woff2'),
+//         url('../fonts/NotoSansJP/NotoSansJP-Medium-Alphabetic.woff') format('woff'),
+//         url('../fonts/NotoSansJP/NotoSansJP-Medium-Alphabetic.ttf') format('truetype'),
+//         url('../fonts/NotoSansJP/NotoSansJP-Medium-Alphabetic.svg#NotoSansJP-Medium-Alphabetic') format('svg');
+//     font-weight: 500;
+// }
 
 @font-face {
     font-family: 'Kiwi Maru';

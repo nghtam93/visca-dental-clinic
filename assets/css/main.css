@@ -2,6 +2,7 @@
 @import url(../libs/bootstrap/css/bootstrap.css);
 @import url(../libs/wowjs/css/animate.css);
 @import url(../libs/flickity/flickity.min.css);
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -27,7 +28,7 @@ footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
-  font-family: 'NotoSansJP', serif;
+  font-family: 'Noto Sans JP', sans-serif;
   background-color: #fff;
   color: #4D4D4D;
   font-weight: 400;
@@ -103,18 +104,6 @@ a {
   font-family: 'P22SweepyPro';
   src: url("../fonts/P22Sweepy/P22SweepyPro.woff2") format("woff2"), url("../fonts/P22Sweepy/P22SweepyPro.woff") format("woff");
   font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
-@font-face {
-  font-family: 'NotoSansJP';
-  src: url("../fonts/NotoSansJP/NotoSansJP-Regular-Alphabetic.woff2") format("woff2"), url("../fonts/NotoSansJP/NotoSansJP-Regular-Alphabetic.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
-@font-face {
-  font-family: 'NotoSansJP';
-  src: url("../fonts/NotoSansJP/NotoSansJP-Bold-Alphabetic.woff2") format("woff2"), url("../fonts/NotoSansJP/NotoSansJP-Bold-Alphabetic.woff") format("woff");
-  font-weight: bold;
   font-style: normal;
   font-display: swap; }
 @font-face {
