@@ -68,6 +68,36 @@ $(document).ready(function(){
     $(".scrollTop2").click(function() {
       $('.nav__mobile').animate({scrollTop: 0},'slow');
     });
+
+    // Fix content scroll
+    if ($('body').hasClass('home')) {
+        var conceptPos = $('.home-concept').offset().top;
+        var greetingPos = $('.home-greeting').offset().top - $(window).height();
+        var greetingPos02 = $('.home-greeting').offset().top;
+        var conceptTtlPos = $('.home-concept__ttl').offset().top;
+        var conceptTxtPos = $('.home-concept__txt').offset().top; 
+
+        $(window).scroll(function() { 
+            if(conceptPos <= $(this).scrollTop() && $(this).scrollTop() <= greetingPos){ 
+
+                $('.home-concept').addClass('is-active'); 
+                if(conceptTtlPos <= $(this).scrollTop() && $(this).scrollTop() <= conceptTxtPos){ 
+                    $('.home-concept__ttl').addClass('is-on') 
+                }else{
+                    $('.home-concept__ttl').removeClass('is-on') 
+                } 
+
+                if(conceptTxtPos <= $(this).scrollTop() && $(this).scrollTop() <= greetingPos02){
+                    $('.home-concept__txt').addClass('is-on') 
+                }else{ 
+                    $('.home-concept__txt').removeClass('is-on') 
+                } 
+            }else{
+                $('.home-concept').removeClass('is-active'); 
+            } 
+        }); 
+    } 
+
 });
 
 
