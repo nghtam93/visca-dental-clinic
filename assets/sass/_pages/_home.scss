@@ -396,7 +396,7 @@ body{
         &--sub{
             position: fixed;
             top: 220px;
-            right: 15px;
+            right: 0;
             width: 100%;
             max-width: var(--wrapper-mb-width);
             font-family: 'P22SweepyPro';
@@ -447,9 +447,7 @@ body{
         position: fixed;
         opacity: 1;
     }
-    @media ( min-width: 992px ) {
 
-    }
 }
 
 .home-greeting{
