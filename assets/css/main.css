@@ -187,7 +187,7 @@ br.tb {
   .sc__header--title {
     font-size: 22px;
     letter-spacing: 2px;
-    font-weight: 400; }
+    font-weight: 700; }
   .sc__header--sub {
     font-size: 12px;
     letter-spacing: 1px;
@@ -506,8 +506,7 @@ section {
     position: relative;
     border-bottom: 1px solid #fff; }
     .nav__mobile li a {
-      font-family: 'HiraKakuPro-W6';
-      font-weight: 700;
+      font-weight: 400;
       font-size: 16px;
       color: #4D4D4D;
       padding: 18px 30px;
@@ -620,7 +619,6 @@ section {
     position: relative;
     z-index: 1; }
   .sc__boxinfo--title {
-    font-family: 'HiraKakuPro-W6';
     font-weight: 400;
     position: relative;
     font-size: 16px;
@@ -637,7 +635,6 @@ section {
       display: block;
       margin: 10px auto 30px; }
   .sc__boxinfo--sub {
-    font-family: 'HiraKakuPro-W6';
     font-weight: 400;
     font-size: 17px; }
   .sc__boxinfo--phone {
@@ -648,7 +645,6 @@ section {
       top: 2px;
       margin-right: 5px; }
     .sc__boxinfo--phone a {
-      font-family: 'HiraKakuPro-W6';
       font-weight: 400;
       font-size: 31px;
       color: #fff; }
@@ -903,8 +899,6 @@ body {
     .home-slider .el__item--title {
       font-size: 18px;
       letter-spacing: 2px; }
-    .home-slider .el__item--sub {
-      font-family: 'HiraKakuPro-W3'; }
     .home-slider .el__item--date {
       font-size: 18px;
       color: #289BD8; }
