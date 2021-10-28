@@ -671,6 +671,8 @@ body {
       overflow: hidden; } }
 
 .wrapper--mb {
+  position: relative;
+  z-index: 1;
   border-top: 5px solid #5FC4E6;
   border-left: 5px solid #5FC4E6;
   border-right: 5px solid #BEE274;
@@ -1009,7 +1011,7 @@ body {
       right: 0;
       width: var(--wrapper-mb-width);
       height: 100vh;
-      padding-top: 400px;
+      padding: 400px 15px 0;
       text-align: center; }
   .home-concept.is-active .home-concept__ttl.is-on, .home-concept.is-active .home-concept__txt.is-on {
     position: fixed;
@@ -1019,7 +1021,8 @@ body {
   position: relative;
   padding: 90px 0 70px; }
   .home-greeting .el__item--meta {
-    width: 100%; }
+    width: auto;
+    min-width: 48px; }
   .home-greeting .el__item--title {
     position: relative;
     font-size: 18px;
