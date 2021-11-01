@@ -1018,14 +1018,14 @@ body {
     opacity: 1; }
   @media (max-width: 575px) {
     .home-concept .el--sub {
-      top: 200px; }
+      top: 180px; }
     .home-concept .home-concept__ttl .el__content, .home-concept .home-concept__txt .el__content {
       position: fixed;
       top: 0;
       right: 0;
       width: var(--wrapper-mb-width);
       height: 100vh;
-      padding: 350px 15px 0;
+      padding: 320px 15px 0;
       text-align: center; } }
 
 .home-greeting {
