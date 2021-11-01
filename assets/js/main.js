@@ -83,7 +83,7 @@ $(document).ready(function(){
             
             var my_width =  $(this).scrollTop() - conceptPos
             if(my_width >= 0 && $(this).scrollTop() <= greetingPos02){
-              $(".home-concept--bg").css({"transform":"translateY(" + my_width + "px)"});
+              $(".home-concept--bg").css({"transform":"translate3d(0px, " + my_width + "px, 0px)"});
             }
             console.log($(this).scrollTop()+'greetingPos' + greetingPos02);
         
