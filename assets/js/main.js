@@ -78,16 +78,15 @@ $(document).ready(function(){
         var conceptTtlPos = $('.home-concept__ttl').offset().top;
         var conceptTxtPos = $('.home-concept__txt').offset().top; 
 
+
+
         $(window).scroll(function() { 
             
             var my_width =  $(this).scrollTop() - conceptPos
             if(my_width >= 0 && $(this).scrollTop() <= $('.home-greeting').offset().top){
               $(".home-concept--bg").css({"transform":"translate3d(0px, " + my_width + "px, 0px)"});
             }
-
-            console.log($(this).scrollTop()+'greetingPos' + greetingPos02);
         
-
             if(conceptPos <= $(this).scrollTop() && $(this).scrollTop() <= greetingPos){ 
 
                 $('.home-concept').addClass('is-active'); 
