@@ -69,6 +69,8 @@ $(document).ready(function(){
       $('.nav__mobile').animate({scrollTop: 0},'slow');
     });
 
+    
+
     // Fix content scroll
     if ($('body').hasClass('home')) {
         var conceptPos = $('.home-concept').offset().top;
@@ -78,6 +80,14 @@ $(document).ready(function(){
         var conceptTxtPos = $('.home-concept__txt').offset().top; 
 
         $(window).scroll(function() { 
+            
+            var my_width =  $(this).scrollTop() - conceptPos
+            if(my_width >= 0 && $(this).scrollTop() <= greetingPos02){
+              $(".home-concept--bg").css({"transform":"translateY(" + my_width + "px)"});
+            }
+            console.log($(this).scrollTop()+'greetingPos' + greetingPos02);
+        
+
             if(conceptPos <= $(this).scrollTop() && $(this).scrollTop() <= greetingPos){ 
 
                 $('.home-concept').addClass('is-active'); 

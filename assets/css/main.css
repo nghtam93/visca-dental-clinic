@@ -954,7 +954,6 @@ body {
 .home-concept {
   position: relative;
   padding: 0px 0;
-  background: url(../images/home-concept-img-1.png) no-repeat;
   background-size: cover;
   background-attachment: fixed;
   min-height: 400vh;
@@ -1013,6 +1012,15 @@ body {
       height: 100vh;
       padding: 400px 15px 0;
       text-align: center; }
+  .home-concept .home-concept--bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: var(--wrapper-mb-width);
+    height: 100%;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: contain; }
   .home-concept.is-active .home-concept__ttl.is-on, .home-concept.is-active .home-concept__txt.is-on {
     position: fixed;
     opacity: 1; }
@@ -1034,7 +1042,8 @@ body {
 
 .home-greeting {
   position: relative;
-  padding: 90px 0 70px; }
+  padding: 90px 0 70px;
+  background-color: #fff; }
   .home-greeting .el__item--meta {
     width: auto;
     min-width: 48px; }
@@ -1075,7 +1084,8 @@ body {
 
 .home-feature {
   position: relative;
-  padding: 90px 35px 130px; }
+  padding: 90px 35px 130px;
+  background-color: #fff; }
   .home-feature .sc__header {
     margin-bottom: 110px; }
   .home-feature .el__item {
