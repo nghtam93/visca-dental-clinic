@@ -1026,7 +1026,11 @@ body {
       width: var(--wrapper-mb-width);
       height: 100vh;
       padding: 320px 15px 0;
-      text-align: center; } }
+      text-align: center; }
+    .home-concept .el--title {
+      font-size: 18px;
+      line-height: 38px;
+      letter-spacing: 2px; } }
 
 .home-greeting {
   position: relative;
