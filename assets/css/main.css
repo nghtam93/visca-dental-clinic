@@ -1016,6 +1016,17 @@ body {
   .home-concept.is-active .home-concept__ttl.is-on, .home-concept.is-active .home-concept__txt.is-on {
     position: fixed;
     opacity: 1; }
+  @media (max-width: 575px) {
+    .home-concept .el--sub {
+      top: 200px; }
+    .home-concept .home-concept__ttl .el__content, .home-concept .home-concept__txt .el__content {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: var(--wrapper-mb-width);
+      height: 100vh;
+      padding: 350px 15px 0;
+      text-align: center; } }
 
 .home-greeting {
   position: relative;
