@@ -1020,8 +1020,7 @@ body {
     height: 100%;
     z-index: -1;
     background-repeat: no-repeat;
-    background-size: contain;
-    transition: all .2s; }
+    background-size: contain; }
   .home-concept.is-active .home-concept__ttl.is-on, .home-concept.is-active .home-concept__txt.is-on {
     position: fixed;
     opacity: 1; }
