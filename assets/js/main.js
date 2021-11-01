@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
   // Sticky navbar
     // =========================
 
@@ -82,9 +81,10 @@ $(document).ready(function(){
         $(window).scroll(function() { 
             
             var my_width =  $(this).scrollTop() - conceptPos
-            if(my_width >= 0 && $(this).scrollTop() <= greetingPos02){
+            if(my_width >= 0 && $(this).scrollTop() <= $('.home-greeting').offset().top){
               $(".home-concept--bg").css({"transform":"translate3d(0px, " + my_width + "px, 0px)"});
             }
+
             console.log($(this).scrollTop()+'greetingPos' + greetingPos02);
         
 
