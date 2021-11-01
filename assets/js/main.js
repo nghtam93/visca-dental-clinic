@@ -84,7 +84,10 @@ $(document).ready(function(){
             
             var my_width =  $(this).scrollTop() - conceptPos
             if(my_width >= 0 && $(this).scrollTop() <= $('.home-greeting').offset().top){
-              $(".home-concept--bg").css({"transform":"translate3d(0px, " + my_width + "px, 0px)"});
+            //   $(".home-concept--bg").css({"transform":"translate3d(0px, " + my_width + "px, 0px)"});
+              $(".home-concept--bg").css({"position":"fixed","background-size": "cover"});
+            }else{
+                $(".home-concept--bg").css({"position":"absolute","background-size": "contain"});
             }
         
             if(conceptPos <= $(this).scrollTop() && $(this).scrollTop() <= greetingPos){ 
