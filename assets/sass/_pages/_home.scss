@@ -324,6 +324,7 @@ body{
 .home-news{
     position: relative;
     padding: 80px 45px;
+    // background-color: #fff;
     .nav-tabs{
         justify-content: center;
         border: 0;
@@ -376,7 +377,7 @@ body{
     padding: 0px 0;
     // background: url(../images/home-concept-img-1.png) no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    // background-attachment: fixed;
     min-height: 400vh;
     padding-bottom: 100vh;
     padding-top: 100vh;

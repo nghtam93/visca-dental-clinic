@@ -83,11 +83,13 @@ $(document).ready(function(){
         $(window).scroll(function() { 
             
             var my_width =  $(this).scrollTop() - conceptPos
+            var my_width2 =  conceptPos - $(this).scrollTop()
             if(my_width >= 0 && $(this).scrollTop() <= $('.home-greeting').offset().top){
-            //   $(".home-concept--bg").css({"transform":"translate3d(0px, " + my_width + "px, 0px)"});
+              $(".home-concept--bg").css({"top":0+"px"});
               $(".home-concept--bg").css({"position":"fixed","background-size": "cover"});
             }else{
-                $(".home-concept--bg").css({"position":"absolute","background-size": "contain"});
+                $(".home-concept--bg").css({"top":my_width2+"px"});
+                $(".home-concept--bg").css({"position":"fixed","background-size": "cover"});
             }
         
             if(conceptPos <= $(this).scrollTop() && $(this).scrollTop() <= greetingPos){ 

@@ -955,7 +955,6 @@ body {
   position: relative;
   padding: 0px 0;
   background-size: cover;
-  background-attachment: fixed;
   min-height: 400vh;
   padding-bottom: 100vh;
   padding-top: 100vh;
