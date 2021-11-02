@@ -323,8 +323,13 @@ body{
 }
 .home-news{
     position: relative;
-    padding: 80px 45px;
+    padding: 5px 0;
     // background-color: #fff;
+    .sc__wrap{
+        position: relative;
+        background-color: #fff;
+        padding: 75px 45px;
+    }
     .nav-tabs{
         justify-content: center;
         border: 0;
@@ -384,6 +389,7 @@ body{
     max-width: var(--wrapper-mb-width);
     
     .sc__wrap{
+        position: relative;
         z-index: -1;
     }
     .el{
@@ -448,7 +454,7 @@ body{
         }
     }
     .home-concept--bg {
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         width: var(--wrapper-mb-width);
@@ -456,6 +462,8 @@ body{
         z-index: -1;
         background-repeat: no-repeat;
         background-size: cover;
+        border-left: 2px solid #5FC4E6;
+        border-right: 2px solid #BEE274;
     }
     &.is-active{
        
