@@ -376,13 +376,16 @@ body{
     position: relative;
     padding: 0px 0;
     // background: url(../images/home-concept-img-1.png) no-repeat;
-    background-size: cover;
+    // background-size: cover;
     // background-attachment: fixed;
     min-height: 400vh;
     padding-bottom: 100vh;
     padding-top: 100vh;
     max-width: var(--wrapper-mb-width);
-    z-index: -1;
+    
+    .sc__wrap{
+        z-index: -1;
+    }
     .el{
         &--thumb{
             position: relative;

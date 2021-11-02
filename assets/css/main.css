@@ -954,12 +954,12 @@ body {
 .home-concept {
   position: relative;
   padding: 0px 0;
-  background-size: cover;
   min-height: 400vh;
   padding-bottom: 100vh;
   padding-top: 100vh;
-  max-width: var(--wrapper-mb-width);
-  z-index: -1; }
+  max-width: var(--wrapper-mb-width); }
+  .home-concept .sc__wrap {
+    z-index: -1; }
   .home-concept .el--thumb {
     position: relative; }
   .home-concept .el--title {
