@@ -1026,7 +1026,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     border-left: 2px solid #5FC4E6;
-    border-right: 2px solid #BEE274; }
+    border-right: 2px solid #BEE274;
+    opacity: 0;
+    pointer-events: none; }
   .home-concept.is-active .home-concept__ttl.is-on, .home-concept.is-active .home-concept__txt.is-on {
     position: fixed;
     opacity: 1; }
