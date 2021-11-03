@@ -78,8 +78,6 @@ $(document).ready(function(){
         var conceptTtlPos = $('.home-concept__ttl').offset().top;
         var conceptTxtPos = $('.home-concept__txt').offset().top; 
 
-
-
         $(window).scroll(function() { 
             
             var my_width =  $(this).scrollTop() - conceptPos

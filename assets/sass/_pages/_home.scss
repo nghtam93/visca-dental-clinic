@@ -151,6 +151,8 @@ body{
             font-size: 15px;
             line-height: 1.1;
             min-height: 50px;
+            width: calc(100% - 44px);
+            flex: 0 0 auto;
             li{
                 position: relative;
                 flex-grow: 1;
@@ -321,6 +323,7 @@ body{
         padding-top: 150%;
     }
 }
+
 .home-news{
     position: relative;
     padding: 5px 0;

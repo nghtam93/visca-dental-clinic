@@ -1,3 +1,44 @@
+.header{
+    &__banner{
+        position: relative;
+        padding-bottom: 25px;
+        .g__item{
+            position:relative;width:100%;
+            &--thumb{
+                width: 85%;
+                margin-left: auto;
+                border-bottom-left-radius: 20px;
+            }
+            &--meta{
+                position: absolute;
+                min-width: 57%;
+                max-width: 87%;
+                bottom: 11%;
+                left: 0;
+                overflow: hidden;
+                background-color: rgba(255, 255, 255, .9);
+                border-radius: 10px;
+                padding: 20px 50px 20px 25px;
+            }
+            &--sub{
+                font-size: 12px;
+                letter-spacing: 1px;
+                line-height: normal;
+                color: #71ABDD;
+            }
+            &--title{
+                font-family: 'Noto Sans JP', sans-serif;
+                font-size: 22px;
+                letter-spacing: 4px;
+                color: #4D4D4D;
+                font-weight: 700;
+            }
+        }
+        .dnfix__thumb{
+            padding-top:100%;display:block;min-height:220px;
+        }
+    }
+}
 .sc__boxinfo{
     position: relative;
     background: url(../images/home-services-box-1.png) no-repeat;

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(../fonts/icomoon/style.css);
 @import url(../libs/bootstrap/css/bootstrap.css);
 @import url(../libs/wowjs/css/animate.css);
@@ -185,6 +186,7 @@ br.tb {
   text-align: center;
   margin-bottom: 40px; }
   .sc__header--title {
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: 22px;
     letter-spacing: 2px;
     font-weight: 700; }
@@ -608,6 +610,42 @@ section {
     -webkit-transform-origin: 0% 90%;
     transform-origin: 0% 90%; }
 
+.header__banner {
+  position: relative;
+  padding-bottom: 25px; }
+  .header__banner .g__item {
+    position: relative;
+    width: 100%; }
+    .header__banner .g__item--thumb {
+      width: 85%;
+      margin-left: auto;
+      border-bottom-left-radius: 20px; }
+    .header__banner .g__item--meta {
+      position: absolute;
+      min-width: 57%;
+      max-width: 87%;
+      bottom: 11%;
+      left: 0;
+      overflow: hidden;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      padding: 20px 50px 20px 25px; }
+    .header__banner .g__item--sub {
+      font-size: 12px;
+      letter-spacing: 1px;
+      line-height: normal;
+      color: #71ABDD; }
+    .header__banner .g__item--title {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 22px;
+      letter-spacing: 4px;
+      color: #4D4D4D;
+      font-weight: 700; }
+  .header__banner .dnfix__thumb {
+    padding-top: 100%;
+    display: block;
+    min-height: 220px; }
+
 .sc__boxinfo {
   position: relative;
   background: url(../images/home-services-box-1.png) no-repeat;
@@ -782,7 +820,9 @@ body {
       flex-grow: 1;
       font-size: 15px;
       line-height: 1.1;
-      min-height: 50px; }
+      min-height: 50px;
+      width: calc(100% - 44px);
+      flex: 0 0 auto; }
       .header__nav > ul li {
         position: relative;
         flex-grow: 1;
@@ -1359,5 +1399,160 @@ body {
   bottom: 30px;
   right: 15px;
   cursor: pointer; }
+
+.header__banner--map {
+  padding: 85px 20px 25px;
+  text-align: center; }
+  .header__banner--map .-wrap {
+    margin-bottom: 10px; }
+  .header__banner--map .btnz {
+    position: relative; }
+    .header__banner--map .btnz::before {
+      content: "";
+      position: relative;
+      top: -3px;
+      display: inline-block;
+      width: 41px;
+      height: 6px;
+      background: url(../img/access-map-arrow-right.png) no-repeat;
+      background-size: contain;
+      margin-right: 15px; }
+
+.access-transport {
+  padding: 25px 40px 60px; }
+  .access-transport .el__item:not(:last-child) {
+    margin-bottom: 60px; }
+  .access-transport .el__item--title {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    background: #5FC4E6;
+    margin-bottom: 10px;
+    padding: 14px 20px; }
+  .access-transport .el__item--excerpt {
+    font-size: 16px;
+    color: #4D4D4D; }
+.access-route {
+  padding: 60px 0 160px; }
+  .access-route .el__item {
+    max-width: 89%; }
+    .access-route .el__item:not(:last-child) {
+      margin-bottom: 30px; }
+    .access-route .el__item--thumb {
+      margin-bottom: 20px;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      overflow: hidden; }
+    .access-route .el__item--title {
+      font-family: 'Noto Sans JP', sans-serif;
+      position: relative;
+      font-size: 16px;
+      font-weight: 400;
+      padding-left: 75px;
+      min-height: 48px;
+      display: flex;
+      align-items: center; }
+      .access-route .el__item--title::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 40px;
+        width: 38px;
+        height: 6px;
+        background: url(../img/access-map-arrow-right.png) no-repeat;
+        background-size: contain;
+        transform: rotate(90deg);
+        transform-origin: left; }
+
+.header__banner--services {
+  padding: 55px 0 65px; }
+  .header__banner--services .el__item {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 16px; }
+    .header__banner--services .el__item--thumb {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 55px;
+      margin-bottom: 5px; }
+    .header__banner--services .el__item--title {
+      font-size: 16px;
+      line-height: 18px;
+      color: #666666;
+      font-weight: 400; }
+  .header__banner--services .el__col {
+    position: relative;
+    display: flex;
+    justify-content: center; }
+    .header__banner--services .el__col:after {
+      content: "";
+      position: absolute;
+      top: 20px;
+      right: 0;
+      width: 1px;
+      height: 50px;
+      background-color: #B1B1B1; }
+    .header__banner--services .el__col:nth-child(3n):after {
+      display: none; }
+
+.services-caries {
+  padding: 60px 0; }
+  .services-caries .sc__wrap {
+    margin-bottom: 100px; }
+  .services-caries .el__item {
+    max-width: 89%;
+    margin-left: auto; }
+    .services-caries .el__item--thumb {
+      margin-bottom: 20px;
+      border-top-left-radius: 13px;
+      border-bottom-left-radius: 13px;
+      overflow: hidden;
+      padding-top: 41%; }
+    .services-caries .el__item--meta {
+      font-family: 'Noto Sans JP', sans-serif;
+      padding-right: 30px; }
+      .services-caries .el__item--meta ul {
+        margin-bottom: 20px; }
+        .services-caries .el__item--meta ul li {
+          position: relative;
+          margin-bottom: 5px;
+          color: #008ED0;
+          font-size: 18px;
+          font-weight: 700;
+          padding-left: 18px; }
+          .services-caries .el__item--meta ul li::before {
+            content: "✓";
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 18px; }
+.services-banner {
+  padding: 110px 0; }
+  .services-banner .el__box {
+    background: url(../images/pages/services-banner-bg.png) no-repeat;
+    background-size: cover;
+    padding: 45px 35px; }
+    .services-banner .el__box--excerpt {
+      margin-bottom: 30px; }
+  .services-banner .el__item {
+    margin-bottom: 15px; }
+    .services-banner .el__item--thumb {
+      text-align: center; }
+
+.services-clgt {
+  padding-bottom: 50px; }
+  .services-clgt .el__socical {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px; }
+    .services-clgt .el__socical li {
+      margin: 0 10px; }
+    .services-clgt .el__socical a {
+      font-size: 43px;
+      color: #979797; }
 
 /*# sourceMappingURL=main.css.map */
