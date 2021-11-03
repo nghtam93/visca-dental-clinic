@@ -1555,4 +1555,179 @@ body {
       font-size: 43px;
       color: #979797; }
 
+.header__banner--staff .el__item--list {
+  padding: 0 35px; }
+  .header__banner--staff .el__item--list hr {
+    background-color: #5FC4E6;
+    margin-bottom: 30px; }
+  .header__banner--staff .el__item--list p {
+    margin-bottom: 30px; }
+
+.staff-doctor {
+  padding: 120px 0; }
+  .staff-doctor .el__item {
+    max-width: 89%;
+    margin-left: auto; }
+    .staff-doctor .el__item--thumb {
+      margin-bottom: 30px;
+      border-top-left-radius: 13px;
+      border-bottom-left-radius: 13px;
+      overflow: hidden;
+      padding-top: 41%; }
+    .staff-doctor .el__item--meta {
+      font-family: 'Noto Sans JP', sans-serif;
+      padding-right: 30px; }
+    .staff-doctor .el__item--title {
+      font-weight: 500;
+      margin-bottom: 20px; }
+  .staff-doctor .el__item--list hr {
+    background-color: #5FC4E6;
+    margin: 30px 0; }
+  .staff-doctor .el__item--list p {
+    margin-bottom: 30px; }
+.staff-staff {
+  padding: 100px 0 80px; }
+  .staff-staff .el__item {
+    max-width: 89%;
+    margin-left: auto;
+    margin-bottom: 80px; }
+    .staff-staff .el__item--thumb {
+      margin-bottom: 30px;
+      border-top-left-radius: 13px;
+      border-bottom-left-radius: 13px;
+      overflow: hidden;
+      padding-top: 41%; }
+    .staff-staff .el__item--meta {
+      font-family: 'Noto Sans JP', sans-serif;
+      padding-right: 30px; }
+    .staff-staff .el__item--title {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 20px; }
+  .staff-staff .el2__item {
+    margin-bottom: 0; }
+    .staff-staff .el2__item--thumb {
+      margin-bottom: 40px;
+      overflow: hidden;
+      padding-top: 100%; }
+    .staff-staff .el2__item--meta {
+      font-family: 'Noto Sans JP', sans-serif;
+      padding: 0 35px; }
+    .staff-staff .el2__item--title {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      color: #289BD8; }
+
+.header__banner-facilities {
+  padding: 55px 25px 25px;
+  font-family: 'Noto Sans JP', sans-serif; }
+  .header__banner-facilities hr {
+    margin: 30px 0;
+    background-color: #979797; }
+  .header__banner-facilities ul li {
+    position: relative;
+    padding-left: 27px;
+    margin-bottom: 10px; }
+    .header__banner-facilities ul li::before {
+      content: "";
+      position: absolute;
+      top: 11px;
+      left: 0;
+      width: 17px;
+      height: 4px;
+      background: url(../img/facilities-arrow-right.png) no-repeat;
+      background-size: contain; }
+
+.facilities-content {
+  padding: 70px 0; }
+  .facilities-content .el__header--title {
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-bottom: 30px; }
+  .facilities-content .el__item {
+    margin-bottom: 80px; }
+    .facilities-content .el__item--thumb {
+      padding-top: 51%;
+      max-width: 89%;
+      border-top-right-radius: 13px;
+      border-bottom-right-radius: 13px;
+      overflow: hidden;
+      margin-bottom: 45px; }
+    .facilities-content .el__item--meta {
+      padding: 0 35px; }
+  .facilities-content .el2__item {
+    margin-bottom: 70px;
+    padding: 0 35px; }
+    .facilities-content .el2__item--box {
+      padding: 20px 10px;
+      background-color: #5FC4E6;
+      color: #fff;
+      margin-bottom: 30px;
+      text-align: center; }
+    .facilities-content .el2__item--title {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 10px; }
+  .facilities-content .el3__header--title {
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #666666; }
+  .facilities-content .el3__item {
+    margin-bottom: 100px; }
+    .facilities-content .el3__item--thumb {
+      padding-top: 51%;
+      max-width: 89%;
+      border-top-right-radius: 13px;
+      border-bottom-right-radius: 13px;
+      overflow: hidden;
+      margin-bottom: 20px; }
+    .facilities-content .el3__item--header {
+      text-align: center; }
+    .facilities-content .el3__item--title {
+      position: relative;
+      font-family: 'Noto Sans JP', sans-serif;
+      text-align: center;
+      font-size: 22px;
+      letter-spacing: 2px;
+      font-weight: 700;
+      margin-bottom: 30px;
+      color: #666666;
+      display: inline-block;
+      padding: 0 30px; }
+      .facilities-content .el3__item--title::before, .facilities-content .el3__item--title::after {
+        content: "－";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0; }
+      .facilities-content .el3__item--title::after {
+        left: auto;
+        right: 0; }
+    .facilities-content .el3__item--excerpt {
+      padding: 0 35px; }
+
+.clinic-content {
+  padding: 90px 0 10px; }
+  .clinic-content .el__item {
+    margin-bottom: 80px; }
+    .clinic-content .el__item--thumb {
+      padding-top: 131%;
+      max-width: 89%;
+      border-top-right-radius: 13px;
+      border-bottom-right-radius: 13px;
+      overflow: hidden;
+      margin-bottom: 30px; }
+    .clinic-content .el__item--meta {
+      padding: 0 35px; }
+
 /*# sourceMappingURL=main.css.map */

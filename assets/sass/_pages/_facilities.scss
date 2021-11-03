@@ -1,0 +1,118 @@
+.header__banner-facilities{
+    padding: 55px 25px 25px;
+    font-family: 'Noto Sans JP', sans-serif;
+    hr{
+        margin: 30px 0;
+        background-color: #979797;
+    }
+    ul{
+        li{
+            position: relative;
+            padding-left: 27px;
+            margin-bottom: 10px;
+            &::before{
+                content: "";
+                position: absolute;
+                top: 11px;
+                left: 0;
+                width: 17px;
+                height: 4px;
+                background: url(../img/facilities-arrow-right.png) no-repeat;
+                background-size: contain;
+            }
+        }
+    }
+}
+.facilities{
+    &-content{
+        padding: 70px 0;
+        .el__header--title {
+            font-family: 'Noto Sans JP', sans-serif;
+            text-align: center;
+            font-size: 22px;
+            letter-spacing: 2px;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+        .el__item{
+            margin-bottom: 80px;
+            &--thumb{
+                padding-top: 51%;
+                max-width: 89%;
+                border-top-right-radius: 13px;
+                border-bottom-right-radius: 13px;
+                overflow: hidden;
+                margin-bottom: 45px;
+            }
+            &--meta{
+                padding: 0 35px;
+            }
+        }
+        .el2__item{
+            margin-bottom: 70px;
+            padding: 0 35px;
+            &--box{
+                padding: 20px 10px;
+                background-color: #5FC4E6;
+                color: #fff;
+                margin-bottom: 30px;
+                text-align: center;
+            }
+            &--title{
+                font-family: 'Noto Sans JP', sans-serif;
+                font-size: 22px;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+        }
+        .el3__header--title{
+            font-family: 'Noto Sans JP', sans-serif;
+            text-align: center;
+            font-size: 22px;
+            letter-spacing: 2px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            color: #666666;
+        }
+        .el3__item{
+            margin-bottom: 100px;
+            &--thumb{
+                padding-top: 51%;
+                max-width: 89%;
+                border-top-right-radius: 13px;
+                border-bottom-right-radius: 13px;
+                overflow: hidden;
+                margin-bottom: 20px;
+            }
+            &--header{
+                text-align: center;
+            }
+            &--title{
+                position: relative;
+                font-family: 'Noto Sans JP', sans-serif;
+                text-align: center;
+                font-size: 22px;
+                letter-spacing: 2px;
+                font-weight: 700;
+                margin-bottom: 30px;
+                color: #666666;
+                display: inline-block;
+                padding: 0 30px;
+                &::before, &::after{
+                    content: "－";
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                }
+                &::after{
+                    left: auto;
+                    right: 0;
+                }
+            }
+            &--excerpt{
+                padding: 0 35px;
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.clinic{
+    &-content{
+        padding: 90px 0 10px;
+        .el__item{
+            margin-bottom: 80px;
+            &--thumb{
+                padding-top: 131%;
+                max-width: 89%;
+                border-top-right-radius: 13px;
+                border-bottom-right-radius: 13px;
+                overflow: hidden;
+                margin-bottom: 30px;
+            }
+            &--meta{
+                padding: 0 35px;
+            }
+        }
+    }
+}
