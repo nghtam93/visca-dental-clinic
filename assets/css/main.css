@@ -507,6 +507,8 @@ section {
   .nav__mobile li {
     position: relative;
     border-bottom: 1px solid #fff; }
+    .nav__mobile li.active a {
+      color: #5FC4E6; }
     .nav__mobile li a {
       font-weight: 400;
       font-size: 16px;

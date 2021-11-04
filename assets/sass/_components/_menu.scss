@@ -79,6 +79,11 @@
     li{
         position:relative;
         border-bottom: 1px solid #fff;
+        &.active{
+            a{
+                color:$color_primary;
+            }
+        }
         a{
             font-weight: 400;
             font-size: 16px;
