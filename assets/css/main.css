@@ -1446,6 +1446,8 @@ body {
       border-top-right-radius: 20px;
       border-bottom-right-radius: 20px;
       overflow: hidden; }
+      .access-route .el__item--thumb .dnfix__thumb {
+        padding-top: 58.2%; }
     .access-route .el__item--title {
       font-family: 'Noto Sans JP', sans-serif;
       position: relative;

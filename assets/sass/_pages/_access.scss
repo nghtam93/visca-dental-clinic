@@ -54,6 +54,9 @@
                 border-top-right-radius: 20px;
                 border-bottom-right-radius: 20px;
                 overflow: hidden;
+                .dnfix__thumb{
+                    padding-top: 58.2%;
+                }
             }
             &--title{
                 font-family: 'Noto Sans JP', sans-serif;
