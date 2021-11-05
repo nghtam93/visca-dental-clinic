@@ -19,6 +19,16 @@
                 height: 4px;
                 background: url(../img/facilities-arrow-right.png) no-repeat;
                 background-size: contain;
+                transition: left 1s;
+            }
+
+            &:hover{
+                &::before{
+                    left: 2px;
+                }
+                a{
+                    color: #5fc4e6;
+                }
             }
         }
     }

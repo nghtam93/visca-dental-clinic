@@ -1,5 +1,29 @@
 $(document).ready(function(){
-  // Sticky navbar
+
+    var $carousel = $('.pc__slider');
+    // bind event listener first
+    $carousel.on( 'ready.flickity', function() {
+        setTimeout(function() {
+            $('.pc__slider').removeClass('is-start').addClass('is-end');
+        }, 500);
+
+    });
+
+    $carousel.on( 'select.flickity', onSlideStart );
+    $carousel.on( 'settle.flickity', onSlideEnd );
+
+    function onSlideStart() {
+      console.log('slide start');
+      $('.pc__slider').removeClass('is-end').addClass('is-start');
+    }
+
+    function onSlideEnd() {
+      console.log('slide end');
+      $('.pc__slider').removeClass('is-start').addClass('is-end');
+    }
+
+
+    // Sticky navbar
     // =========================
 
     // Custom function which toggles between sticky class (is-sticky)
@@ -72,6 +96,8 @@ $(document).ready(function(){
 
     // Fix content scroll
     if ($('body').hasClass('home')) {
+
+        /**/
         var conceptPos = $('.home-concept').offset().top;
         var greetingPos = $('.home-greeting').offset().top - $(window).height();
         var greetingPos02 = $('.home-greeting').offset().top;
@@ -108,6 +134,36 @@ $(document).ready(function(){
             } 
         }); 
     } 
+
+
+    /**/
+    topMenuHeight = $('.header__nav').outerHeight()
+    if(window.location.hash){
+        $(document).off("scroll");
+        var target = window.location.hash,
+            menu = target;
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top - topMenuHeight - 20
+        });
+    }
+
+    $('.anchor-link [href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        $(document).off("scroll");
+        console.log(topMenuHeight)
+        $('a').each(function () {
+            $(this).removeClass('active');
+        })
+        $(this).addClass('active');
+
+        var target = this.hash,
+            menu = target;
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top - topMenuHeight - 20
+        });
+    });
 
 });
 
